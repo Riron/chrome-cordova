@@ -1,6 +1,10 @@
 function Toast() {
 }
 
+Toast.prototype.showWithOptions = function (options, position, successCallback, errorCallback) {
+  console.log("Toast has been called, message:" + options.message + ", duration:" + options.duration + ", position: " + options.position + ", offSetY: " + options.addPixelsY);
+};
+
 Toast.prototype.show = function (message, duration, position, successCallback, errorCallback) {
   console.log("Toast has been called, message:" + message + ", duration:" + duration + ", position: " + position);
 };
